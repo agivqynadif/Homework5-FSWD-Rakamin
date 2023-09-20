@@ -23,6 +23,8 @@ document.getElementById("dataForm").addEventListener("submit", function (e) {
   } else if (moneyData < 100000 || moneyData > 1000000) {
     alert("Uang sangu minimal 100 ribu dan maksimal 1 juta");
     return;
+  } else {
+    alert("Data berhasil disimpan");
   }
 
   dataArray.push({ nameData, ageData, moneyData });
